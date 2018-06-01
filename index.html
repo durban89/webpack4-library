@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <meta charset=UTF-8>
+    <meta http-equiv=X-UA-Compatible>
+    <meta name=format-detection content="telephone=no">
+    <meta name=viewport content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <title>Popbox Test</title>
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./dist/Popbox.min.js?1"></script>
+  </head>
+  <body>
+    <div>Popbox</div>
+    <script>
+$(() => {
+  window.Popbox.default.pop({
+    text: '这个是一个提示',
+    confirmBtnText: '联系客服',
+    cancelBtnText: '好的，我知道了',
+    confirmFunc: () => {
+      console.log('asda');
+    },
+  });
+});
+    </script>
+  </body>
+</html>
